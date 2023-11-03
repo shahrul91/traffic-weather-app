@@ -1,42 +1,124 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: 20px; */
+  width: 100%;
+}
+
+header {
   text-align: center;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.date-time-row {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin-left: 10px; */
+  /* z-index: 999; */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-datepicker {
+  /* width: 150px; */
+  margin-right: 10px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input {
+  padding: 5px;
 }
 
-.card {
-  padding: 2em;
+.time-picker {
+  width: 100px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.locations-weather-row {
+  display: flex 0;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 20px;
+  /* flex-wrap: wrap;  */
+  flex: 70%;
+}
+
+.weather-row {
+  align-items: center;
+  justify-content: center;
+  flex: 30%;
+}
+
+.locations-weather-row div {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.2s;
+}
+
+.locations-weather-row div.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.weather-forecasts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.screenshot-row {
+  justify-content: center;
+  display: flex 0;
+  flex: 70%;
+}
+
+
+.screenshot-image {
+  max-width: 100%;
+  width: 70%;
+  max-height: 500px;
+}
+
+.time-picker-container {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+
+.time-picker-clock {
+  border: 2px solid #007bff;
+  border-radius: 50%;
+}
+
+
+.time-picker-dial {
+  background-color: #007bff;
+}
+
+
+.custom-time-picker-class {
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  color: #333;
 }
